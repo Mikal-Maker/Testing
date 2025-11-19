@@ -7,3 +7,6 @@
 ## Question 2) Briefly explain pytest discovery (file/function naming) and what a fixture is.
 - Pytest discovery: Uses the name of files to run. Looks for .py files beginning with "test_" or ending with "_test", functions beginnning with "test_" are run.
 - Fixture: A ficture is a function with the @pytest.fixture decorator. It allows for data to be given for tests like arguments, making tests easier to duplicate without extra code.
+## Features used in quesiton 3
+- I used "@pytest.mark.parametrize" to run multiple tests with parameters which made it easy to do tests with more cases (negative nums, large nums, small nums, etc.)
+- I aslo used "pytest.raises" to check that invalid inputs were being handeld correctly
